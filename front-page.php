@@ -32,7 +32,7 @@ get_header(); ?>
                                 <div class="card-body">
                                     <div class="small text-muted"><?php the_time('F jS, Y'); ?></div>
                                     <h2 class="card-title h4"><?php the_title(); ?></h2>
-                                    <p class="card-text"><?php the_excerpt (); ?></p>
+                                    <p class="card-text"><?php echo wp_trim_words( get_the_content(), 40, '...' ); ?></p>
                                     <a class="btn btn-primary" href="<?php the_permalink(); ?>">Read more →</a>
                                 </div>
                             </div>
