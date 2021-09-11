@@ -1,0 +1,19 @@
+/*
+Theme Name: My Boostrap Theme
+Theme URI: 
+Author:Chaman Rastogi
+Author URI: 
+Description: The 2021 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+
+*/
+.admin-bar .site-container {
+    padding-top: 32px;
+  }
+  
+  @media only screen and (max-width: 782px) {
+    
+    .admin-bar .site-container {
+      padding-top: 46px;
+    }
+    
+  }
