@@ -114,7 +114,41 @@ add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
  *
  */
 function bootstrapthme_widgets_init() {
+// Area 1.
+register_sidebar(
+	array(
+		'name'          => 'Primary Widget Area (Sidebar)',
+		'id'            => 'primary_widget_area',
+		'before_widget' => '<div class="card mb-4">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="card-header">',
+		'after_title'   => '</div>', 
+	)
+);
 
+// Area 2.
+register_sidebar(
+	array(
+		'name'          => 'Secondary Widget Area (Header Navigation)',
+		'id'            => 'secondary_widget_area',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	)
+);
+
+// Area 3.
+register_sidebar(
+	array(
+		'name'          => 'Third Widget Area (Footer)',
+		'id'            => 'third_widget_area',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	)
+);
 	register_sidebar( array(
 		'name'          => 'Home Banner Slider',
 		'id'            => 'home_banner',
@@ -125,11 +159,14 @@ function bootstrapthme_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => 'Home Sidebar',
-		'id'            => 'home_sidebar',
-		'before_widget' => '<aside class="home_sidewidget">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
+		'id'            => 'home_sidebar',		
+        'description'    => 'ff',
+        'class'          => 'list-unstyled mb-0',
+		'before_widget' => '<div class="card mb-4">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="card-header">',
+		'after_title'   => '</div>', 
+		
 	) );
 	register_sidebar( array(
 		'name'          => 'Home Footer Widget',
