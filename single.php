@@ -19,8 +19,15 @@ get_header(); ?>
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">Posted on <?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></div>
                             <!-- Post categories-->
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                            <?php
+                            $categories = get_the_category();
+                            foreach($categories as $category){
+                               // echo $category->name; //category name
+                                $cat_link = get_category_link($category->cat_ID);
+                                echo '<a class="badge bg-secondary text-decoration-none link-light" href="'.$cat_link.'"> '.$category->name.' </a> ' ; // category link
+                             }
+                            ?>
+                   
                         </header>
                         <!-- Preview image figure-->
                         <figure class="mb-4"><img class="img-fluid rounded" src="<?=$featured_img_offer_url?>" alt="..."></figure>
@@ -71,6 +78,9 @@ get_header(); ?>
                                         When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
                                     </div>
                                 </div>
+                                <?php
+                                comments_template();
+                                ?>
                             </div>
                         </div>
                     </section>

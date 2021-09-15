@@ -49,7 +49,7 @@ if ( is_active_sidebar( 'primary_widget_area' ) || is_archive() || is_single() )
 							<ul>
 								<li><i class="fa fa-calendar"></i>';
 								$month='';
-								$month = get_the_date( 'F, Y' );
+								$month = get_the_date( 'F jS, Y' );
 									
 										$output .= '<a href="' . esc_url( get_month_link( get_the_date( 'Y' ), get_the_date( 'm' ) ) ) . '" title="' . esc_attr( get_the_date( 'F, Y' ) ) . '">' . esc_html( $month ) . '</a>';
 								
