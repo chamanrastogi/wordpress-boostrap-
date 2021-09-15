@@ -255,9 +255,11 @@ add_action( 'init', 'team_init' );
 function theme_files(){
 
 	    // Theme block stylesheet.
-		wp_enqueue_style('Main Style', get_template_directory_uri().'/style.css', array(), $theme_version, 'all');
-		wp_enqueue_style( 'Bootstrap 5','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
-	    // Theme block Javascript.	
+		wp_enqueue_style('mainstyle', get_template_directory_uri().'/style.css', array(), $theme_version, 'all');
+		wp_enqueue_style( 'bootstrap-5','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+	    wp_enqueue_style( 'font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+		
+		// Theme block Javascript.	
 	    wp_enqueue_script('Bundle', get_template_directory_uri().'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',0,0,true);
 	 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

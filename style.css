@@ -17,3 +17,167 @@ Description: The 2021 theme for WordPress takes us back to the blog, featuring a
     }
     
   }
+  .sidebar-form {
+    padding: 40px 30px;
+    background: url(assets/images/bg/sidebar-form.jpg);
+    background-repeat: no-repeat;
+  }
+  .sidebar-form input,
+  .sidebar-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background: rgba(10, 56, 112, 0.25);
+    font-size: 16px;
+    padding: 10.5px 20px;
+  }
+  .sidebar-form textarea {
+    display: inherit;
+    height: 120px;
+  }
+  .sidebar-form button.readon {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #106eea;
+    background: #ffffff;
+  }
+  .sidebar-form button.readon:hover {
+    background: #e6e6e6;
+  }
+  .sidebar-form ::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .sidebar-form :-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .sidebar-form ::placeholder {
+    color: #ffffff;
+  }
+  
+  .sidebar-grid .sidebar-title .title {
+    color: #1c1b1b;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+  }
+  .sidebar-grid .sidebar-title .title:after {
+    content: "";
+    position: absolute;
+    border: 0;
+    width: 50px;
+    height: 2px;
+    background: #106eea;
+    z-index: 1;
+    margin-left: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .sidebar-grid.sidebar-search .search-bar {
+    position: relative;
+  }
+  .sidebar-grid.sidebar-search .search-bar input {
+    border: 1px solid #ddd;
+    color: #444444;
+    padding: 12px 17px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .sidebar-grid.sidebar-search .search-bar button {
+    outline: none;
+    border: none;
+    color: #1c1b1b;
+    padding: 0 16px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background: transparent;
+  }
+  .sidebar-grid.sidebar-search .search-bar button i:before {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .sidebar-grid.sidebar-search .search-bar button:hover {
+    color: #106eea;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px 20px;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-image {
+    margin-right: 15px;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-image img {
+    max-width: 80px;
+    border-radius: 3px;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc ul li {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #555;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc ul li i {
+    margin-right: 5px;
+    color: #106eea;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc ul li:last-child {
+    margin-right: 0;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc .post-title h5 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 0;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc .post-title h5 a {
+    color: #1c1b1b;
+    text-decoration:none;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc .post-title h5 a:hover {
+    color: #106eea;
+  }
+  .sidebar-grid.sidebar-popular-post .single-post .post-desc ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  .sidebar-grid.sidebar-categories ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  .sidebar-grid.sidebar-categories ul li a {
+    color: #363636;
+    transition: all 0.3s ease;
+  }
+  .sidebar-grid.sidebar-categories ul li a:hover {
+    color: #106eea;
+  }
+  .sidebar-grid.sidebar-categories ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1c1b1b;
+  }
+  .sidebar-grid.sidebar-categories ul li:last-child {
+    margin: 0;
+  }
