@@ -100,7 +100,10 @@ function bootstrapthme_header_style() {
 	</style>
 <?php }
 
-
+function custom_theme_setup() {
+    add_theme_support( 'html5', array( 'comment-list' ) );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
 
  //Add HTML5 theme support.
  
